@@ -22,7 +22,7 @@ module.exports = {
   uid: 'com.onecomme.plugin-get-sklive-image', // @required unique plugin id
   version: '1.0.0', // @required semver version
   author: 'ds83171', // @required author name
-  url: 'https://aaa.com', // @optional link (ex. documentation link)
+  url: 'https://github.com/dsa83171/OneCommeGetSKLiveImage.git', // @optional link (ex. documentation link)
   permissions: ['filter.comment'], // @required　https://onecomme.com/docs/developer/websocket-api/#%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%81%AE%E7%A8%AE%E9%A1%9E%E3%81%A8%E3%83%87%E3%83%BC%E3%82%BF
   defaultState: {},
   /**
