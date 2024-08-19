@@ -33,8 +33,8 @@ module.exports = {
 		//改邊框
 		var comment_border = '<img src="https://static-cdn.jtvnw.net/automatic-reward-images/comments-2.png" class="gift-image" alt="">';
 
-    /* effect_border2 可以改成 effect_border，有兩種邊框自行挑選 */
-		str = str.replaceAll(comment_border, '<div class="effect_border2">');
+    /* effect_border 可以改成 effect_border2，有兩種邊框自行挑選 */
+		str = str.replaceAll(comment_border, '<div class="effect_border">');
 
     comment.data.comment = str;
     return comment;
