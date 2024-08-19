@@ -1,6 +1,6 @@
 let sklive_Array = [];
 //sklive貼圖網址
-fetch('https://live.sk-knower.com/lib/iconjsonp.php?channel=你的twitchID', {
+fetch('https://live.sk-knower.com/lib/iconjsonp.php?channel=ds83171', {
     method: 'GET',
 })
     .then((res) => res.json())

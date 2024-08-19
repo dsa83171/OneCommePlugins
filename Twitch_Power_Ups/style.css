@@ -1,0 +1,67 @@
+
+/*特效邊框 for twitch訊息效果*/
+.comment-text .effect_border{
+	border: 10px solid;
+	border-image: linear-gradient(45deg,gold, deeppink) 1;
+	clip-path: inset(0px round 10px);
+	animation: huerotate 6s infinite linear;
+	filter: hue-rotate(360deg);
+	padding:10px;
+}
+@keyframes huerotate {
+	0%{
+		filter: hue-rotate(0deg);
+	}
+	100%{
+		filter: hue-rotate(360deg);
+	}
+}
+
+/*特效邊框 for twitch訊息效果*/
+.comment-text .effect_border2 {
+	position: relative;
+	border-radius: 10px;
+	background: linear-gradient(0deg, rgba(54, 57, 63), rgba(54, 57, 63));
+	margin:15px;
+	padding:15px;
+	
+}
+
+.effect_border2:before, .effect_border2:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+		#0000ff, #00ff00,#ffff00, #ff0000);
+	border-radius: 10px;
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 15s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.effect_border2:after {
+	filter: blur(30px);
+}
+
+
+.large_emote{
+	width: 100%;
+	height: 100%;
+	min-width: 250px;
+	min-height: 250px;
+}
